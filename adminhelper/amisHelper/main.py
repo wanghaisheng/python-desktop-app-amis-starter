@@ -6,9 +6,9 @@ from .. import sql
 import os
 import functools
 
-__all__ = ["startAmis"]
+__all__ = ["startAmisAdmin"]
 
-def startAmis(app:FastAPI, defaultPath=None, password=None):
+def startAmisAdmin(app:FastAPI, defaultPath=None, password=None):
   api=APIRouter()
   sql.set("create table if not exists amis(path text unique,title text default '',json text default '')")
   #app.mount("/amis/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__),'amis')), name="amis")

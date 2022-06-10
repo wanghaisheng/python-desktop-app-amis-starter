@@ -1,2 +1,2 @@
-from .main import startAmis
-__all__=['startAmis']
+from .main import startAmisAdmin
+__all__=['startAmisAdmin']

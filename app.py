@@ -1,4 +1,4 @@
-from app import startAmis
+from apphelper import startAmis
 from fastapi import FastAPI
 
 app=FastAPI()

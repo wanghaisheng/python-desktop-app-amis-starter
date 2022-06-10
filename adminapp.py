@@ -1,5 +1,5 @@
-from adminhelper import startAmis
+from adminhelper import startAmisAdmin
 from fastapi import FastAPI
 
 adminapp=FastAPI()
-startAmis(adminapp,"/amis/set")
+startAmisAdmin(adminapp,"/amis/set")
