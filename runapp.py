@@ -1,8 +1,6 @@
-from fastapiHelper import start_ui
+from apphelper import start_ui
 import uvicorn
 from app import app
-from adminapp import adminapp
-
 runGUI=True
 
 if __name__ == '__main__':

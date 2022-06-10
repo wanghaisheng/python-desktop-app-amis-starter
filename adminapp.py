@@ -1,4 +1,4 @@
-from fastapiHelperadmin import startAmis
+from adminhelper import startAmis
 from fastapi import FastAPI
 
 adminapp=FastAPI()

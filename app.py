@@ -1,4 +1,4 @@
-from appfastapiBackend import startAmis
+from app import startAmis
 from fastapi import FastAPI
 
 app=FastAPI()
