@@ -79,11 +79,11 @@ def startAmisApp(app:FastAPI, defaultPath=None, password=None):
     if context.__len__()==0:
       return Response(status_code=404)
     return HTMLResponse(amisLoad(context[0][0],context[0][1]))
-  api.get('/get/{path:path}')(getAmis)
+  api.get('/{path:path}')(getAmis)
 
-  @api.get("/set")
+  @api.get("/login")
   def setAmisHTML():
     from .amisTemplate import setAmis
     return HTMLResponse(amisLoad(setAmis[0],setAmis[1]))
   
-  app.include_router(api, prefix='/amis', tags=['amis'])
+  app.include_router(api, prefix='/', tags=['app'])

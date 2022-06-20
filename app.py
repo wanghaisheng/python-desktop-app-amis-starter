@@ -1,5 +1,5 @@
-from apphelper import startAmis
+from apphelper import startAmisApp
 from fastapi import FastAPI
 
 app=FastAPI()
-startAmis(app,"/amis/get/home")
+startAmisApp(app,"/login")
